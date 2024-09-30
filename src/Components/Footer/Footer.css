@@ -1,0 +1,136 @@
+/* General footer styles */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo p {
+    color:#cb6161;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: #252525;
+    font-size: 17px;
+}
+
+.footer-links li {
+    cursor: pointer;
+}
+
+.footer-social-icon {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icons-container {
+    padding: 10px;
+    padding-bottom: 6px;
+    background: #fbfbfb;
+    border: 1px solid #aaa6a6;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    font-size: 18px;
+}
+
+.footer-copyright hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #c7c7c7;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* For tablets and medium-sized screens */
+    .footer {
+        gap: 30px; /* Reduce the gap */
+    }
+    
+    .footer-logo p {
+        font-size: 32px; /* Slightly smaller font */
+    }
+
+    .footer-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 20px; /* Reduce gap between links */
+        font-size: 16px;
+    }
+
+    .footer-social-icon {
+        justify-content: center;
+        gap: 15px; /* Reduce the gap */
+    }
+
+    .footer-copyright {
+        gap: 20px; /* Reduce the gap */
+        font-size: 16px; /* Smaller font for copyright text */
+    }
+    
+    .footer-copyright hr {
+        width: 90%; /* Slightly wider for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* For mobile devices and small screens */
+    .footer {
+        gap: 20px; /* Reduce the gap further */
+    }
+    
+    .footer-logo {
+        flex-direction: column; /* Stack the logo and text vertically */
+        gap: 10px; /* Smaller gap between logo and text */
+    }
+
+    .footer-logo p {
+        font-size: 24px; /* Even smaller font */
+    }
+
+    .footer-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .footer-social-icon {
+        justify-content: center;
+        gap: 10px; /* Smaller gap between icons */
+    }
+
+    .footer-icons-container {
+        padding: 8px;
+    }
+
+    .footer-copyright {
+        gap: 15px; /* Reduce the gap */
+        font-size: 14px;
+    }
+    
+    .footer-copyright hr {
+        width: 100%; /* Full width for mobile screens */
+    }
+}
